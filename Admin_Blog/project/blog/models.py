@@ -14,3 +14,5 @@ class Blog(models.Model):
         return self.title
        #__str__메소드는 models에 내장되어있음. 사용자 입맛에 맞게 타이틀을 커스터마이징 할 수 있게 함.
     
+    def summary(self):
+        return self.contents[:100]

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Details</title>
+</head>
+<body>
+    <div id="container">
+        <div class="text_block">
+            <h1 style="text-align: left;">{{blog.title}}</h1>
+            <div style="clear:both;">
+                <span class="기타">{{blog.created_at}}</span>
+                <span class ="기타">카테고리 : {{blog.category}}<br/></span>
+                <br />
+                <span>글쓴이 : {{blog.author}}<br/></span>
+                <p class="contents">{{blog.contents}}</p>
+            </div>
+
+            <div style= "float:none; width:100%; font-weight: bold;">
+                <a href="{% url 'home'%}" style="color :blue; padding : 0 30px;">집으로</a>
+                <a href="{% url 'edit' blog.id %}" style="color :blue; padding : 0 30px;">글 수정하기</a>
+                <a href="{% url 'delete' blog.id %}" style="color :red; padding : 0 30px;">글 삭제하기</a> 
+            </div>
+
+
+
+
+            
+            
+    
+    
+        </div>
+    </div>
+ 
+   
+</body>
+</html>
+

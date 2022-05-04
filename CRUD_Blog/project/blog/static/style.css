@@ -1,0 +1,55 @@
+#container {
+     background-color : skyblue;
+     width : 700px;
+     margin : 0 auto;
+     padding : 10px;
+     
+}
+
+.text_block{
+     clear: both;
+     padding : 20px;
+     background-color: white;
+     
+     margin : 10px auto;
+     width: 90%;
+}
+
+a{
+     text-decoration-line: none;
+     color : black;
+}
+
+.button {
+     float: right;
+     width: 150px;
+     padding : 10px;
+     margin : 0 25px 10px 25px;
+     text-align: right;
+     font-weight:bold;
+}
+
+.button a{
+     color : rgb(0, 102, 255);
+     font-style: italic;
+}
+
+.기타 {
+     float : right;
+     margin-left: 20px;
+     font-style: italic;
+     font-size: small;
+}
+
+.contents{
+     margin : 10px 5px;
+     padding : 0 10px;
+     background-color: rgb(221, 221, 221);
+}
+
+.text_block{
+     background-color: white;
+     width:650px;
+     margin : 0 auto;
+     padding : 10px;
+}

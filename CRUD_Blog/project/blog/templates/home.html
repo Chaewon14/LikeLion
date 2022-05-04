@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Music </title>
+</head>
+<body>
+    <div id="container" >
+        <h1 style="text-align: center;">Music Lyrics</h1>
+        
+        <div class = "button">
+            <a href="{% url 'new'%}" >새 글 작성하기</a>
+        </div>
+        {% for blog in blogs %}
+        <div class = text_block>
+            <span class="기타">{{blog.created_at}}</span>
+            <span class ="기타">카테고리 : {{blog.category}}<br/></span>
+            <span>글쓴이 : {{blog.author}}<br/></span>
+            <a href="{%url 'detail' blog.id %}">
+                <h4>{{blog.title}}</h4>
+                <p class="contents">{{blog.summary}}</p>
+                
+        </div>
+        <br/> 
+        {% endfor %}
+    </div>
+ 
+</body>
+
